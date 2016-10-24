@@ -1,0 +1,117 @@
+% Please use the skeleton file you have received in the 
+% invitation-to-submit email, where your data are already
+% filled in. Otherwise please make sure you insert your 
+% data according to the instructions in PoSauthmanual.pdf
+\documentclass[a4paper]{report}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{lineno}
+\usepackage{listings}
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\newcommand{\genasso}[2]{\begin{minipage}{0.7\textwidth}\begin{normalsize}\begin{flushleft}\textbf{{#1}}\end{flushleft}\end{normalsize}\vspace{-1cm}\begin{flushleft}\begin{small}{#2}\end{small}\end{flushleft}\end{minipage}\\\vspace{0.2cm}}
+\pagenumbering{arabic}
+
+\pagestyle{fancy} 
+\newcommand{\frontmatter}{\clearpage \cfoot{\thepage\ }
+\setcounter{page}{1}
+\pagenumbering{Roman}}
+\newcommand{\mainmatter}{\clearpage \lhead{\myAuth} \rhead{\myDate} \cfoot{} \rfoot{\thepage\ of \pageref{LastPage}}
+\setcounter{page}{1}
+\pagenumbering{arabic}}
+\newcommand{\backmatter}{\clearpage \rfoot{\thepage\ }
+\setcounter{page}{1}
+\pagenumbering{alph}}
+
+
+\newcommand{\makemytitlepage}{\begin{titlepage}
+    \begin{center}
+        \vspace*{0.8cm}
+        
+        \Huge
+        \textbf{\myTitle}
+        
+        \vspace{1.5cm}
+        
+        \Large
+        \myAuthor
+
+        \vspace{1.5cm}
+
+        %\begin{large}\textbf{Abstract:} \myAbstract \end{large}
+        \includegraphics[width=6cm]{./IM.jpg}
+
+        \vfill
+        
+        \myAsso
+        
+        \vspace{0.8cm}
+        
+        \Large
+
+        %\myDate
+        
+    \end{center}
+\end{titlepage}}
+\newcommand{\myAuth}{Birgit Pohl 574353 (MO. 9-11), Kevin Trogant 572451 (Mo. 15-17)\\Ronja Enseleit 572404 (Mo. 15-17), Dustin Hebecker 571271 (MO. 9-11)}
+\newcommand{\myAuthor}{Birgit Pohl 574353 (MO. 9-11)\\Kevin Trogant 572451 (Mo. 15-17)\\Ronja Enseleit 572404 (Mo. 15-17)\\Dustin Hebecker 571271 (MO. 9-11)}
+\newcommand{\myAsso}{Group: *Iron Man*}
+
+
+\newcommand{\myTitle}{Exercise Sheet 0}
+
+\begin{document}
+\frontmatter
+\makemytitlepage
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only modify below here  and change myTitle!!!!!!!!!!!!!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{test}
+
+hello
+
+\subsection*{test2}
+
+\begin{lstlisting}
+Put your code here.
+\end{lstlisting}
+
+
+%\section{Introduction to the Concept}%
+% \begin{figure}[ht%]%
+%    \begin{center}%
+%        \includegraphics[width=10cm]{./Graphics/illustres.jpg}%
+%        \caption{Schematic of the Wavelength shifting Optical Module (WOM) on the right. The working principle%
+%of a wavelength shifting wave guide is shown in a cross section on the left. Light is absorbed by a thin layer of WLS and re-emitted isotropically at a lower wavelength. With a probability of $\approx 75\,\%$%the re-emitted light is captured by total internal reflection and guided towards the PMT where it can be detected.}
+%        \label{wom}
+%    \end{center}
+%\end{figure}
+
+
+%\backmatter
+
+%\begin{thebibliography}{bibliography}
+
+%\bibitem{LoVGEN2} IceCube-Gen2 Collaboration, "{IceCube-Gen2: A Vision for the Future of Neutrino Astronomy in Antarctica}", astro-ph.HE 2014, arXiv: 1412.5106
+%
+%\bibitem{Motivation} S. B\"oser, M. Kowalski, L. Schulte, N. L. Strotjohann and M. Voge, arXiv:1304.2553.
+%
+%\bibitem{SHIPLoI} SHiP Collaboration, A facility to Search for Hidden Particles (SHiP) at the CERN SPS, arXiv:1504.04956.
+%
+%\bibitem{Masterarbeit} Dustin Hebecker, Development of a Single Photon Detector with Wavelength-shifting and Light guiding Technology, 2014
+%
+%\bibitem{ICRC13} Schulte et. al., A large-area single photon sensor employing wavelength-shifting and light-guiding technology, ICRC 2013, arXiv:1307.6713S
+%
+%\bibitem{PINGULoI} The IceCube-PINGU Collaboration, "{Letter of Intent: The Precision IceCube Next Generation Upgrade (PINGU)}", January 2014, arXiv:1401.2046
+%
+%\bibitem{comercial_paint} Eljen Technology, "EJ-298\#2 BLUE WAVESHIFTING PAINT", datasheet
+
+%\end{thebibliography}
+
+
+\end{document}
